@@ -1,0 +1,152 @@
+main {
+  margin: 0 2%;
+  color: white;
+}
+
+main h1 {
+  text-align: center;
+  font-family: "Jura";
+  font-weight: bold;
+  margin: 5%;
+}
+
+table {
+  width: 100%;
+}
+
+table thead {
+  border-bottom: 2px solid white;
+  font-size: 30px;
+  font-family: "Jura";
+  font-weight: bold;
+  text-align: right;
+}
+
+table tbody {
+  text-align: right;
+  font-size: 20px;
+  font-family: "Darker Grotesque";
+  font-weight: 500;
+}
+
+table th {
+  text-align: right; /* Căn thẻ th bên phải */
+  padding-right: 10px;
+}
+
+.soluong {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  height: 50px;
+  border: 2px solid white;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table a {
+  text-decoration: none;
+  color: white;
+  width: 50%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+table a:hover {
+  color: #fab320;
+  text-decoration: underline;
+}
+
+table .option th {
+  padding-top: 50px;
+}
+
+/* Phần input số lượng */
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  height: 50px;
+  border: 2px solid white;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quantity button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 25px;
+  transition: background-color 0.2s;
+}
+
+.input-box {
+  width: 100%;
+  text-align: center;
+  border: none;
+  padding: 8px 10px;
+  font-size: 16px;
+  outline: none;
+  background-color: black;
+  color: white;
+}
+
+.input-box::-webkit-inner-spin-button,
+.input-box::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+table tfoot {
+  padding: 20px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+table tfoot th {
+  padding: 1% 0;
+  font-size: 30px;
+  font-family: "Jura";
+  font-weight: bold;
+  text-align: right;
+}
+
+.thanhtoan {
+  width: 100%;
+  text-align: right;
+  margin-top: 50px;
+}
+
+.thanhtoan p {
+  font-size: 20px;
+  font-family: "Darker Grotesque";
+  font-weight: 500;
+}
+
+.thanhtoan button {
+  width: 15%;
+  height: 50px;
+  color: #fab320;
+  background-color: black;
+  border: 2px solid #fab320;
+  font-family: "Jura";
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.thanhtoan button:hover {
+  background-color: #fab320;
+  color: black;
+}

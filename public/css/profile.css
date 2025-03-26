@@ -1,0 +1,164 @@
+main {
+  color: white;
+  margin: 0 2%;
+  text-align: center;
+}
+
+main h1 {
+  font-family: "Jura";
+  font-weight: bold;
+  margin: 5%;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  text-align: left;
+}
+.profile h2 {
+  padding: 50px;
+  background-color: #211e1f;
+  height: 100%;
+  font-family: "Jura";
+  font-weight: bold;
+}
+
+.profile .profile-detail {
+  padding: 50px;
+  background-color: #292727;
+  height: 100%;
+  text-align: center;
+  font-family: "Jura";
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.profile .profile-detail .avatar {
+  text-align: left;
+}
+
+.profile .profile-detail img {
+  width: 150px;
+}
+
+.profile .profile-detail .file {
+  border: none;
+}
+
+.profile .profile-detail .logout {
+  float: right;
+  width: 25%;
+  font-size: 16px;
+  height: 40px;
+  margin: 0;
+}
+
+.profile .profile-detail label {
+  float: left;
+}
+
+.profile .profile-detail input {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: "Darker Grotesque";
+  font-weight: 500;
+  background-color: #292727;
+  border: 2px solid white;
+  padding: 10px;
+  color: white;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.name div {
+  width: 100%;
+}
+
+.profile button {
+  margin-top: 5%;
+  width: 40%;
+  height: 55px;
+  color: #fab320;
+  background-color: black;
+  border: 2px solid #fab320;
+  font-family: "Jura";
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.profile button:hover {
+  color: black;
+  background-color: #fab320;
+}
+
+.profile-detail .order {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid white;
+  margin-bottom: 5%;
+  padding: 20px;
+  border-radius: 2%;
+  font-size: 20px;
+}
+
+.profile-detail .order .title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-detail .order .title div {
+  text-align: left;
+}
+
+.profile-detail .order .order-detail {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  text-align: left;
+  gap: 1%;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.order-detail .image {
+  width: 100%;
+  position: relative;
+}
+
+.order-detail .image .image-container {
+  aspect-ratio: 1;
+  width: 100%;
+  overflow: hidden;
+}
+
+.order-detail .image .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.order-detail .image span {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  height: 25%;
+  width: 25%;
+  background-color: #fff;
+  border-radius: 50%;
+  color: black;
+  text-align: center;
+  font-family: "Darker Grotesque";
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.order form {
+  width: 50%;
+  text-align: right;
+}

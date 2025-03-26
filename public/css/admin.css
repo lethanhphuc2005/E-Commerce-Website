@@ -1,0 +1,241 @@
+body {
+  width: 100%;
+  height: 1000px;
+  margin: 0;
+}
+header {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.head {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  font-family: "Jura";
+  font-weight: bold;
+}
+.sidebar {
+  position: fixed;
+  width: 20%;
+  text-align: center;
+}
+
+.sidebar .logo {
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+.sidebar .logo img {
+  width: 100%;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.sidebar li a {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 10%;
+  font-family: "Jura";
+  font-weight: bold;
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+
+nav h1 {
+  padding-left: 50px;
+}
+
+nav div {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+nav img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 2px solid white;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+main {
+  width: 100%;
+}
+
+main .main-table {
+  margin: 2%;
+}
+
+main .main-table button {
+  margin: 2% 0;
+  height: 45px;
+  width: 20%;
+  font-size: 20px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+main .main-table button:hover {
+  opacity: 50%;
+}
+
+main table {
+  border-collapse: collapse;
+  border: 2px solid black;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+main td,
+main th {
+  border: 2px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+main th {
+  background-color: #fab320;
+  font-weight: bold;
+}
+
+.active-check a {
+  color: #fab320;
+}
+.button {
+  text-align: center;
+}
+
+main .main-table table button {
+  width: 90%;
+}
+
+.control {
+  margin: 2%;
+}
+
+.control label {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.control img {
+  width: 30%;
+}
+
+.control button {
+  margin: 2% 0;
+  height: 45px;
+  width: 20%;
+  font-size: 20px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.control textarea {
+  height: 200px;
+}
+
+.control button:hover {
+  opacity: 50%;
+}
+
+
+#page nav {
+  margin-top: 50px;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#page .active-check  {
+  background-color: black;
+  color: white;
+}
+
+ /* Ẩn checkbox mặc định */
+ input[type="checkbox"] {
+  display: none;
+}
+
+/* Tạo checkbox tùy chỉnh */
+.custom-checkbox {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 5px; /* Bo góc (tùy chọn) */
+  position: relative;
+  cursor: pointer;
+}
+
+/* Hiệu ứng khi checkbox được chọn */
+input[type="checkbox"]:checked + .custom-checkbox {
+  background-color: #fab320; /* Màu nền khi chọn */
+  border-color: black;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox::after {
+  content: '';
+  position: absolute;
+  left: 8px;
+  width: 10px;
+  height: 20px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.blank {
+  color: gray;
+}
+
+.details-row {
+  background-color: #f9f9f9;
+}
+.details-row table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.details-row th, .details-row td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.order-row {
+  cursor: pointer;
+}
